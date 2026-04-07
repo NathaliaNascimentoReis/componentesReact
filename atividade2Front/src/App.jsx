@@ -2,6 +2,8 @@ import BotaoVerde from "./components/BotaoVerde";
 import CabecalhoLoja from "./components/CabecalhoLoja.jsx";
 import BotaoUniversal from "./components/BotaoPolivalente.jsx";
 import CrachaVisitante from "./components/CrachaVisitante.jsx";
+import AcessoBancario from "./components/AcessoBancario.jsx";
+import AvisoSistema from "./components/AvisoSistema.jsx";
 
 export default function App() {
   const visitantes = [
@@ -17,13 +19,13 @@ export default function App() {
     },
   ];
 
-  const textoBotao = "qwqwq";
+  const textoBotao = "ablublubléblublublé";
 
   return (
     <>
       <BotaoVerde></BotaoVerde>
       <CabecalhoLoja></CabecalhoLoja>
-      <BotaoUniversal texto={textoBotao}></BotaoUniversal>
+      <BotaoUniversal textoBotao={textoBotao}></BotaoUniversal>
 
       <section>
         {visitantes.map((visitante) => (
@@ -34,6 +36,9 @@ export default function App() {
           ></CrachaVisitante>
         ))}
       </section>
+
+      <AcessoBancario></AcessoBancario>
+      <AvisoSistema mensagem="Cuidado" corAlerta="white"></AvisoSistema>
     </>
   );
 }
