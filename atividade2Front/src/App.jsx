@@ -4,6 +4,7 @@ import BotaoUniversal from "./components/BotaoPolivalente.jsx";
 import CrachaVisitante from "./components/CrachaVisitante.jsx";
 import AcessoBancario from "./components/AcessoBancario.jsx";
 import AvisoSistema from "./components/AvisoSistema.jsx";
+import Contador from "./components/Contador.jsx";
 
 export default function App() {
   const visitantes = [
@@ -39,6 +40,8 @@ export default function App() {
 
       <AcessoBancario></AcessoBancario>
       <AvisoSistema mensagem="Cuidado" corAlerta="white"></AvisoSistema>
+      
+      <Contador></Contador>
     </>
   );
 }
