@@ -23,7 +23,7 @@ export default function App() {
         },
     ];
 
-    const textoBotao = 'ablublubléblublublé';
+    const textoBotao = 'cade o 100 fessor';
 
     return (
         <>
@@ -40,7 +40,7 @@ export default function App() {
                 ))}
             </section>
 
-            <AvisoSistema mensagem="Cuidado" corAlerta="yellow"></AvisoSistema>
+            <AvisoSistema mensagem="Cuidado ⚠️" corAlerta="yellow" />
 
             <Contador></Contador>
             <Disjuntor></Disjuntor>
